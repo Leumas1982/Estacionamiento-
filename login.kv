@@ -1,0 +1,37 @@
+#:kivy 1.0
+<LoginScreen>:
+    name: 'login'
+    MDFloatLayout:
+        md_bg_color: 149/255, 149/255, 149/255, 1
+        MDScreen:
+            padding: '8dp'
+            MDLabel:
+                text: 'Estacionamiento CUCEI'
+                font_size: '22sp'
+                font_name: 'KonkhmerSleokchher-Regular.ttf'
+                pos_hint:{'center_x': .915, 'center_y': .790}
+
+                MDTextField:
+                    
+                    hint_text: 'usuario'
+                    pos_hint: {'center_x':0.5 ,'center_y':0.3}
+                    helper_name: ""
+
+                MDTextField:
+                    hint_text: 'Contraseña'
+                    pos_hint:   {'center_x':0.5, 'center_y':0.2}     
+                MDFillRoundFlatButton: 
+                    text: 'Login'
+                    halign: 'center'
+                    pos_hint:   {'center_x':0.5, 'center_y':0.1} 
+                    on_release: app.wm.current = 'main'
+                MDCard:
+                    size_hint:(1,.4)
+                    pos_hint:{"center_x": .5, "center_y": .55}
+                    elevation: 5
+                    color: "black"
+                    md_bg_color: 1/255, 1/255, 1/255, 1
+                    Image:
+
+                        source: 'assets\imgs\pexels-photo-1756957.jpeg'
+                        size_hint: (1,1)            

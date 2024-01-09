@@ -1,0 +1,62 @@
+<MainScreen>:
+    name: 'main'
+    MDScreen:
+        padding: '8dp'
+        MDBottomNavigation:
+            panel_color: "#317880"
+            selected_color_background: "pink"
+            text_color_active: "lightgrey"
+
+            MDBottomNavigationItem:
+                name: 'screen 1'
+                text: 'Perfil'
+                icon: 'gmail'
+                badge_icon: "numeric-10"
+
+                MDRectangleFlatIconButton:
+                    text: "Informacion basica"
+                    text_color: "black"
+                    line_color: 69,168,180,1.00
+                    pos_hint:{"center_x": .2, "center_y": .9}
+                    on_release: app.wm.current = 'Basica'
+                MDRoundFlatButton:
+                    text: "Contacto de emergencia"
+                    text_color: "black"
+                    line_color:(69,168,180,1.00)
+                    pos_hint:{"center_x": .2, "center_y": .7}
+                    on_release: app.wm.current = 'contacto'
+                MDRoundFlatButton:
+                    text: "Placas"
+                    text_color: "black"
+                    line_color:(69,168,180,1.00)
+                    pos_hint:{"center_x": .2, "center_y": .5}
+                    on_release: app.wm.current = 'placas'
+                MDRoundFlatButton:
+                    text: "Modelo"
+                    text_color: "black"
+                    line_color:(69,168,180,1.00)
+                    pos_hint:{"center_x": .2, "center_y": .3}
+                    on_release: app.wm.current = 'modelo'
+
+            MDBottomNavigationItem:
+                name: 'screen 2'
+                text: 'Fila virtual'
+                icon: 'twitter'
+                badge_icon: "numeric-5"
+                MDRoundFlatButton:
+                    text: "Ingresar a la fila"
+                    text_color: "black"
+                    line_color:(69,168,180,1.00)
+                    pos_hint:{"center_x": .2, "center_y": .5}
+                    on_release: app.wm.current = 'fila'
+
+                
+
+            MDBottomNavigationItem:
+                name: 'screen 3'
+                text: 'Mi lugar'
+                icon: 'language-javascript'
+
+                MDLabel:
+                    text: 'Tu lugar es'
+                    halign: 'center'

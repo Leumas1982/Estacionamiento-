@@ -1,0 +1,21 @@
+<PlacasScreen>:
+    name: 'placas'
+    MDScreen:
+        padding: '8dp'
+        MDTextButton:
+            text: "Back"
+            custom_color: "black"
+            pos_hint:{"center_x": .95, "center_y": .98}
+            on_release: app.wm.current = 'main'
+        MDCard:
+            size_hint:(.6,.4)
+            pos_hint:{"center_x": .5, "center_y": .75}
+            elevation: 5
+            Image:
+
+                source: 'assets\imgs\pexels-photo-2777530.jpeg'
+                size_hint: (1,1)
+        MDTextField:
+            hint_text: "Matricula"
+            mode: "fill"
+            pos_hint:{"center_x": .5, "center_y": .5}

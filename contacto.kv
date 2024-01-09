@@ -1,0 +1,21 @@
+<ContactoScreen>:
+    name: 'contacto'
+    MDScreen:
+        padding: '8dp'
+        MDTextButton:
+            text: "Back"
+            custom_color: "black"
+            pos_hint:{"center_x": .95, "center_y": .98}
+            on_release: app.wm.current = 'main'
+        MDTextField:
+            hint_text: "Nombre de contacto"
+            mode: "fill"
+            pos_hint:{"center_x": .5, "center_y": .5}
+        MDTextField:
+            hint_text: "Parentesco"
+            mode: "fill"
+            pos_hint:{"center_x": .5, "center_y": .4}
+        MDTextField:
+            hint_text: "Numero de contacto"
+            mode: "fill"
+            pos_hint:{"center_x": .5, "center_y": .3}
